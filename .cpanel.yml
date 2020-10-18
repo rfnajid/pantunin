@@ -1,0 +1,6 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=../../public_html/pantunin
+ - /bin/cp index.html $DEPLOYPATH
+ - /bin/cp -R assets $DEPLOYPATH
