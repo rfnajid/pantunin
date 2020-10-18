@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Pantunin</title>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+
+    </head>
+
+    <body>
+        <div id="panel">
+            <div>
+                <h1 class="title">Pantunin</h1>
+                <p class="subtitle">Website generate pantun</p>
+                <div class="form-group">
+                    <input class="form-control form-control-lg" type="text" id="input" placeholder="Masukan isi pantun disini, contoh : hai gadis cantik"/>
+                </div>
+                <div class="button-container">
+                    <button id="random-button" class="btn btn-dark">Random</button>
+                    <button id="submit-button" class="btn btn-dark">Generate</button>
+                </div>
+            </div>
+            <div class="alert alert-danger" role="alert" id="error" style="display: none;">
+                <span class="emoji-left">😥</span>
+                <span>Maap... ga bisa nemuin sampiran yang pas...</span>
+            </div>
+            <div class="card" id="result-card" style="display: none;">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label for="pantun" class="col-sm-12 col-form-label">Pantun</label>
+                        <div class="col-sm-12">
+                            <textarea readonly class="form-control-plaintext" id="pantun">
+Encik mamat mengaji tamat
+mengaji quran sampai tamat
+                            </textarea>
+                        </div>
+                    </div>
+                    <div id="copy-success" class="alert alert-success" role="alert" style="display: none;">
+                        <span class="emoji-left">🥳</span>
+                        <span>Pantun berhasil di-copy!</span>
+                    </div>
+                    <button id="copy-button" class="btn btn-dark">Copy</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="https://pantunin.rfnaj.id">Pantunin</a>
+            <a href="https://rima.rfnaj.id">Rima</a>
+            <a href="https://github.com/rfnajid/pantunin">Github</a>
+        </footer>
+    </body>
+    <script src="assets/js/script.js"></script>
+
+</html>

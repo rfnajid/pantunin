@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Kalam&family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #fafbf6;
+    color: #333;
+}
+
+#panel{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+h1.title{
+    font-family: 'Lobster', cursive;
+    margin: 5px;
+    text-align: center;
+    font-size: 4rem;
+    color: #777780;
+    font-size: 4rem;
+}
+
+.subtitle{
+    font-family:'Kalam', cursive;
+    text-align: center;
+    color:#4f516d;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 720px) {
+    #panel{
+        width: 90%;
+        top: 50%;
+    }
+
+    h1.title{
+        font-size: 3em;
+    }
+
+    .subtitle{
+        font-size: 1.3em;
+    }
+}
+
+.input {
+    color: #333;
+}
+
+label {
+    font-weight: 700;
+}
+
+.emoji-left{
+    margin-right: 10px;
+}
+
+.emoji-right{
+    margin-left: 10px;
+}
+
+.button-container{
+    margin:20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    margin: 0px 5px;
+}
+
+#pantun{
+    font-style: italic;
+    line-height: 2rem;
+}
+
+footer{
+    display: flex;
+    position: relative;
+    width: 75%;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    justify-content: center;
+    padding: 21px;
+    font-size: 1em;
+}
+
+footer a {
+    color: #4f516d;
+    font-weight: 700;
+    margin: 0px 21px;
+}
